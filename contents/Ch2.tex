@@ -1,0 +1,193 @@
+\section{Nuclear Reactors and Nuclear Power}
+
+\subsection{The Fission Chain Reactions}
+
+Neutrons emitted by fissioning nuclei induce fissions in other fissile or fissionable nuclei; the neutrons from these fissions induce fissions in still other fissile or fissionable nuclei; and so on.
+
+\begin{definition}
+    The effective multiplication factor is defined as
+    \begin{equation}
+        k_{\rm eff} = \frac{\text{number of fissions in one generation}}{\text{number of fissions in preceding generation}} = \frac{\text{neutron production rate}}{\text{neutron loss rate(absorption + leakage)}}
+    \end{equation}
+\end{definition}
+
+About $k_{\rm eff}$, 
+\begin{equation}
+    k_{\rm eff} \begin{cases}
+        >1\quad \text{Supercritical, the number of fissions and energy increases with time.} \\
+        =1\quad \text{Critical, fissions at a constant rate, energy is released at a steady level.} \\
+        <1\quad \text{Subcritical, the number of fissions and energy decreases with time.}
+    \end{cases}
+\end{equation}
+
+\subsection{Nuclear Reactor Fuels}
+
+\begin{definition}
+    Reproduction Factor (or Number of effective fission neutrons) is defined as the number of fission neutrons produced per absorption by a fissile or fissionable nucleus in the fuel, which is denoted by the symbol $\eta$ (energy dependent).
+\end{definition}
+
+\begin{fact}
+    Nuclides that can be induced to fission ($\eta > 1$) by neutrons of any incident energy are called {\itshape Fissile Nuclides}, such as ${}^{233}{\rm U}$, ${}^{235}{\rm U}$, ${}^{239}{\rm Pu}$. However, for the {\itshape Fissionable Nuclides}, only neutrons with much higher incident energies could guarantee that the $\eta > 1$ (fission thresholds).
+\end{fact}
+
+In nature, only one fissile nuclide, ${}^{235}{\rm U}$, is found. Its natural isotopic abundance is 0.72\%. 
+
+\subsubsection*{Conversion \& Breeding}
+
+It is possible to manufacture certain fissile isotopes from abundant nonfissile
+material, a process known as {\itshape Conversion}.
+
+\begin{align}
+    &{}^{232}{\rm Th} \longrightarrow {}^{233}{\rm U} \\
+    &{}^{238}{\rm U} \longrightarrow {}^{239}{\rm Pu}
+\end{align}
+
+\begin{definition}
+    The average number of fissile atoms produced in a reactor per fissile fuel atom consumed is called {\itshape Conversion Ratio}, which is denoted by the symbol $C$, when $C > 1$, it is called {\itshape Breeding Ratio}.
+\end{definition}
+
+About $C$, 
+\begin{equation}
+    C \begin{cases}
+        >1\quad \text{Breeder, more than one fissile atom is produced for every fissile atom consumed.} \\
+        <1\quad \text{Converter, reactors that convert but do not breed.} \\
+        =0\quad \text{Burner, reactors that neither convert nor breed but simply consume fuel.}
+    \end{cases}
+\end{equation}
+
+\begin{itemize}
+    \item Conversion, $\eta > 1$;
+    \item Breeding, $\eta > 2$.
+\end{itemize}
+
+For ${}^{233}{\rm U}$, ${}^{235}{\rm U}$ and ${}^{239}{\rm Pu}$, above about 100 keV, $\eta$ rises to values substantially above 2, reactors that can produce such high-energy neutrons ($E > 100\,{\rm keV}$) are called {\itshape Fast Reactors}.
+
+\begin{definition}
+    The net increase in the number of fissile atoms in a reactor per fuel atom consumed is called {\itshape Breeding gain}, which is denoted by the symbol $G$. Obviously, $G = C - 1$.
+\end{definition}
+
+Breeding is also described in terms of {\itshape Doubling Time}.
+
+\begin{definition}
+    The hypothetical time interval during which the amount of fissile material in a reactor doubles, there are {\itshape The Linear Doubling Time}, $t_{Dl}$ and {\itshape The Exponential Doubling Time}, $t_{De}$.
+\end{definition}
+
+\begin{align}
+    &m_0 + GwP_0 \cdot t_{Dl} = 2m_0 \Rightarrow t_{Dl} = \frac{m_0}{GwP_0} \\ 
+    &\dv{m}{t} = GwP = Gw\beta m \Rightarrow t_{De} = \frac{m_0 \ln 2}{GwP_0} \\
+    &t_{De} = t_{Dl} \ln 2 \quad (\text{Since} P_0, m_0)
+\end{align}
+
+\begin{itemize}
+    \item $t_{Dl}$ $\Leftrightarrow$ New fuel continually is extracted and used for further breeding (More commonly);
+    \item $t_{De}$ $\Leftrightarrow$ New fuel left in reactor.
+\end{itemize}
+
+The actual doubling time is greater than computed doubling time (Removed, Chemically Separated and Fabricated were omitted).
+
+\begin{definition}
+    The total energy released in fission by a given amount of nuclear fuel is called the {\itshape Fuel Burnup} (MWd).
+\end{definition}
+
+\begin{definition}
+    The fission energy released per unit mass of the fuel is termed the {\itshape Specific Burnup} (MWd/t).
+\end{definition}
+
+\begin{definition}[Fractional burnup]
+    The equation form is
+    \begin{equation}
+        \beta = \frac{\text{number of fissions}}{\text{initial number of heavy atoms}}
+    \end{equation}
+\end{definition}
+
+\subsection{Non-Nuclear Components of Nuclear Power Plants}
+
+Two main ways to circumvent the droplets problem (excessive erosion of the blades and hence to reduce turbine lifetime) :
+
+\begin{itemize}
+    \item By superheating the steam before it enters a turbine;
+    \item By removing the wet steam from the turbine when the water content 
+    has reached a specified level (moisture separator).
+\end{itemize}
+
+\begin{definition}
+    The overall efficiency of a nuclear power plant is defined as
+    \begin{equation}
+        {\rm eff} = \frac{W}{Q_R} \approx 1 - \frac{Q_C}{Q_R}
+    \end{equation}
+\end{definition}
+
+\subsection{Components of Nuclear Reactors}
+
+Moderator, Coolant, Blanket, Reflector, Control Rods, Pressure Vessel.
+
+\subsection{Power Reactors \& Nuclear Steam Supply System(NSSS)}
+
+\subsubsection*{PWR}
+
+\noindent{\bfseries Pressure Vessel}
+
+\begin{itemize}
+    \item inlet \quad $\approx 290\,{}^{\circ}{\rm C}$
+    \item inside \quad $\approx 15\,{\rm MPa}$
+    \item outlet \quad $\approx 325\,{}^{\circ}{\rm C}$
+\end{itemize}
+
+At this pressure, the water will not boil, at least not to any great extent.
+
+\noindent{\bfseries U-tube Steam Generator}
+
+Steam\quad $\approx 293\,{}^{\circ}{\rm C}, 5\,{\rm MPa}$.
+
+This gives an overall efficiency of between 32\% or 33\% for a PWR plant.
+
+\noindent{\bfseries Pressurizer}
+
+\begin{itemize}
+    \item top\quad pressure-actuated spray nozzle
+    \item bottom\quad pressure-actuated immersion-type heaters
+\end{itemize}
+
+\noindent{\bfseries Fuel}
+
+Uranium dioxide (abundance $\approx 2\%-5\%$), small cylindrical pellets.
+
+Zircaloy-4 fuel tubes, 
+\begin{enumerate}
+    \item Provide mechanical support
+    \item Prevent the escape to the passing coolant of fission products, especially fission product gases.
+\end{enumerate}
+
+Loading Pattern: Out-In and low-leakage.
+
+\subsubsection*{BWR}
+
+\begin{itemize}
+    \item Steam generators in separate heat transfer loops are required for a PWR, while they are in the same loops for a BWR.
+    \item Control rods are always placed at the bottom of the reactor in a BWR.
+    \begin{tip}
+    The coolant at the bottom of core has low steam content, high reactivity and high power density, and the control rods insert from the bottom of core can make the axial power distribution even.
+    \end{tip}
+    \item Less water must be pumped through a BWR per unit time than through a PWR for the same power output.
+    \begin{tip}
+        There is two-phase water in BWR, and no heat transfer loss between the first and second loops, the average enthalpy value of water is higher, when the heat power is constant, the high-enthalpy-value fluid needs lower mass flow.
+    \end{tip}
+    \item The pressure in a BWR is approximately 7 MPa (about one-half the pressure in a PWR).
+\end{itemize}
+
+\subsubsection*{CANDU}
+
+\begin{itemize}
+    \item Pressure-Tube type
+    \item Heavy water as moderator and coolant
+    \item Nature Uranium
+    \item On-line refueling
+\end{itemize}
+
+\subsubsection*{LMFBR}
+
+Loop Type and Pool Type.
+
+\subsubsection*{Others}
+
+VHTR, MSR, SFR, SCWR, GFR, LFR.

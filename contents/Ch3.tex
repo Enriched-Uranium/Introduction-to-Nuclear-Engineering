@@ -1,0 +1,90 @@
+\section{Nuclear Reactor Theory}
+
+\subsection{One-Group Reactor Equation}
+
+\begin{equation}
+    D\nabla^2 \phi - \varSigma_a \phi + S = \frac{1}{v}\pdv{\phi}{t}
+\end{equation}
+
+Since, $S = k_{\infty} \varSigma_a \phi$,  use multiplication factor $k_{\rm eff}$ to balance the equation, time-independent neutron diffusion equation is
+
+\begin{equation}
+    D\nabla^2 \phi - \varSigma_a \phi + \frac{k_{\infty}}{k_{\rm eff}} \varSigma_a \phi = 0
+    \label{eq3.2}
+\end{equation}
+
+The form is Helmholtz equation, 
+
+\begin{equation}
+    \nabla^2 \phi + B^2 \phi = 0
+    \label{eq3.3}
+\end{equation}
+
+the solution depends on the shape of the reactor.
+
+When the reactor is critical, $k_{\rm eff} = 1$, by equation \ref{eq3.2} and \ref{eq3.3}, we have {\itshape Material Buckling}
+
+\begin{equation}
+    B^2 = \frac{k_{\infty} - 1}{L^2} = B_m^2
+\end{equation}
+
+At any time, {\itshape Geometric Buckling} equals to Material Buckling,
+
+\begin{equation}
+    B_g^2 = B_m^2
+\end{equation}
+
+must be satisfied for the reactor to be critical.
+
+Alternative expression of critical equation is
+\begin{equation}
+    \frac{k_{\infty}}{1 + L^2 B_g^2} = 1
+\end{equation}
+
+Modified: $L^2 \longrightarrow M^2 = L^2 + \tau$.
+
+\subsection{Thermal Reactors}
+
+\begin{definition}[Thermal Reactor]
+    A nuclear reactor with a large fission rate by thermal neutrons.
+\end{definition}
+
+\subsubsection*{Six quantities}
+
+\begin{enumerate}
+    \item The fast fission factor
+    \begin{equation}
+        \varepsilon = \frac{\text{number of fast neutrons}}{\text{number of fast neutrons produced by thermal fissions}}
+    \end{equation}
+    \item The fast non-leakage probability
+    
+    $P_s$ is the fraction of the fast neutrons that do not leak from the reactor.
+    \item The resonance escape probability
+    
+    $p$ is the fraction of neutrons that pass through the resonance region without being absorbed.
+    \item The thermal non-leakage probability
+    
+    $P_t$ is fraction of the thermal neutrons that do not leak from the reactor.
+    \item The thermal utilization factor
+    \begin{equation}
+        f = \frac{\text{number of neutrons absorbed in the fuel}}{\text{total number of thermal neutrons absorbed}}
+    \end{equation}
+    \item The number of effective fission neutrons
+    \begin{equation}
+        \eta = \frac{\text{average number of fission neutrons released}}{\text{number of neutrons absorbed in the fuel}}
+    \end{equation}
+\end{enumerate}
+
+\begin{equation}
+    k_{\rm eff} = \varepsilon p f \eta P_s P_t = k_{\infty} P_L
+\end{equation}
+
+\subsection{Reflected Reactors}
+
+Reflector
+\begin{itemize}
+    \item Flatten the radial neutrons flux density distribution
+    \item Improve core edge fuel efficiency
+    \item Reduce neutrons leakage and critical core radius
+    \item Usually use the same material as the moderator
+\end{itemize}
